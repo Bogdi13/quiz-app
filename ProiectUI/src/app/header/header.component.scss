@@ -1,0 +1,16 @@
+/* Stilizare pentru bara de navigație */
+.navbar {
+  margin: 10px;
+  background-color: #cda6e4; /* Schimbă culoarea de fundal după preferințe */
+  text-align: center; /* Centrare text */
+  padding: 10px; /* Spațiu intern */
+}
+
+.navbar-brand,
+a {
+  color: #fff;
+}
+
+.navbar-brand strong {
+  font-weight: bold;
+}

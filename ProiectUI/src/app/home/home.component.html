@@ -1,0 +1,13 @@
+<div>
+  <button mat-button (click)="onViewAllAttempts()" id="viewAllAttemptsButton">See all your attempts</button>
+  <mat-card  *ngFor="let quiz of quizes" class="mat-elevation-z4">
+    <ng-container>
+      <mat-card-content>
+        <p>{{ quiz.title }}</p>
+      </mat-card-content>
+      <button mat-button (click)="onSolveQuiz(quiz)">Start Quiz</button>
+    </ng-container>
+  </mat-card>
+</div>
+
+

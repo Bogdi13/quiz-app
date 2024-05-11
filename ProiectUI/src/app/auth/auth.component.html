@@ -1,0 +1,15 @@
+<div fxLayoutAlign="center center" fxFlexFill class="main-auth-layout">
+  <mat-card fxFlex="25">
+    <mat-toolbar color="primary">Quiz Login</mat-toolbar>
+    <form fxLayoutAlign="stretch" fxLayout="column" class="auth-form" [formGroup]="authForm" (ngSubmit)="onLogin()">
+      <mat-form-field>
+        <input matInput placeholder="Utilizator" formControlName="username">
+      </mat-form-field>
+    
+      <mat-form-field>
+        <input matInput type="password" placeholder="Parola" formControlName="password">
+      </mat-form-field>
+      <button mat-raised-button type="submit">Login</button>
+    </form>
+  </mat-card>
+</div>

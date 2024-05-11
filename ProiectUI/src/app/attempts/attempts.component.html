@@ -1,0 +1,10 @@
+  <mat-card  *ngFor="let attempt of attempts" class="mat-elevation-z4">
+    <ng-container>
+      <mat-card-content>
+        <div>
+        <p>{{attempt.quizTitle}}</p>
+        <p>Scor: </p><p>{{ attempt.score }}</p>
+        </div>
+      </mat-card-content>
+    </ng-container>
+  </mat-card>

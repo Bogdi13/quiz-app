@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.example.ProiectAPI.domain">
+
+    <class name="com.example.ProiectAPI.domain.model.Question" table="Questions">
+        <composite-id>
+            <key-property name="id" type = "java.lang.Integer" column="id"/>
+        </composite-id>
+        <property name="text" type = "java.lang.String" column="text"/>
+        <property name="choiceA" type = "java.lang.String" column="choiceA"/>
+        <property name="choiceB" type = "java.lang.String" column="choiceB"/>
+        <property name="choiceC" type = "java.lang.String" column="choiceC"/>
+        <property name="correctChoice" type = "java.lang.String" column="correctChoice"/>
+    </class>
+
+</hibernate-mapping>

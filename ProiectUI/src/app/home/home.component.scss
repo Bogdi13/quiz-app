@@ -1,0 +1,31 @@
+div {
+  display: flex;
+  flex-direction: column;
+
+  .mat-card {
+    margin: 16px 40px 16px 40px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #ebe7ee;
+  }
+
+  .mat-card-content {
+    padding: 16px;
+  }
+
+  .mat-card-content p {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+
+  .mat-card button {
+    background-color: #cda6e4;
+  }
+
+  button#viewAllAttemptsButton {
+    margin-left: 40px;
+    margin-right: 40px;
+    background-color: #d4c1df;
+    z-index: 1000;
+  }
+}

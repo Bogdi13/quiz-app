@@ -1,0 +1,17 @@
+.mat-card {
+  margin: 16px 40px 16px 40px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #ebe7ee;
+}
+
+.mat-card-content {
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.mat-card-content div p {
+  font-size: 1.5em;
+  font-weight: bold;
+}

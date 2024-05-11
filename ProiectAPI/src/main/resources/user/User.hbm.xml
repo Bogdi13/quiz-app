@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.example.ProiectAPI.domain">
+
+    <class name="com.example.ProiectAPI.domain.model.User" table="Users">
+        <composite-id>
+            <key-property name="id" type = "java.lang.Integer" column="id"/>
+        </composite-id>
+        <property name="firstName" type = "java.lang.String" column="firstName"/>
+        <property name="lastName" type = "java.lang.String" column="lastName"/>
+        <property name="username" type = "java.lang.String" column="username"/>
+        <property name="password" type = "java.lang.String" column="password"/>
+        <property name="role" type = "java.lang.String" column="role"/>
+    </class>
+
+</hibernate-mapping>

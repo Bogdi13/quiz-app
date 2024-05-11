@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.example.ProiectAPI.domain">
+
+    <class name="com.example.ProiectAPI.domain.model.Attempt" table="Attempts">
+        <composite-id>
+            <key-property name="id" type = "java.lang.Integer" column="id"/>
+        </composite-id>
+        <property name="userId" type = "java.lang.Integer" column="firstName"/>
+        <property name="quizId" type = "java.lang.Integer" column="lastName"/>
+        <property name="score" type = "java.lang.Integer" column="username"/>
+    </class>
+
+</hibernate-mapping>
